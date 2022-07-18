@@ -1,0 +1,137 @@
+.main{
+    margin: max(4.5% ,2vw) 2%;
+    h1{
+        font-size: max(22px, 1.75vw);
+        text-align: center;
+    }
+   .items-community{
+    display: flex;
+    justify-content: space-between;
+
+    .item{
+        width: 24.5%;
+        border:1px solid rgb(238, 237, 237);
+        margin: max(35px, 0.8vw) 1%;
+        position: relative;
+        display: flex;
+        padding: max(15px, 1vw) 1%;
+        border-radius: 20px;
+        transition: 0.5s all ease-in;
+        cursor: pointer;
+        &:hover{
+            transform: translate(-5px ,5px);
+            .icon1{
+                opacity: 1;
+            }
+            .info,p{
+                color:var(--second-color) !important;
+            }
+            .link{
+               padding: 10px 15px !important;
+               background-color: var(--main-color);
+               color:var(--second-color) !important;
+            }
+            .inner-img{
+                border:1px solid var(--main-color) !important;
+                background: none !important;
+                .icon{
+                filter:brightness(0) invert(1) !important;
+                -webkit-fitler:brightness(0) invert(1);
+                }
+                .circle{
+                    background: none !important;
+                    border: 1px solid var(--main-color);
+                }
+            }
+        }
+        .icon1{
+            background-image: url('../../../../assets/HomeLanding/p2.png') !important;
+            width: 100%;
+            height:100%;
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: -2;
+            background-position: top center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            filter: brightness(30%);
+            border-radius: 20px;
+            opacity: 0;
+        }
+
+        .main-item{
+            display: flex;
+            flex-direction: column;
+            margin: max(10px, 0.5vw);
+            .top-container{
+                padding: max(15px, 0.8vw) 0;
+                .inner-img{
+                    display: flex;
+                    align-items: center;
+                    border: 2px solid #ebb0a1;
+                    background-color: #f0e0db;
+                    border-radius: 50%;
+                    height: 80px;
+                    justify-content: center;
+                    position: relative;
+                    width: 80px;
+                    .circle{
+                        background-color: var(--second-color);
+                        border-radius: 50%;
+                        height: 70px;
+                        position: absolute;
+                        width: 70px;
+                    }
+                    .icon{
+                        position: absolute;
+                        transition: 0.5s ease;
+                    }
+                }
+            }
+            .info{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex:1 1;
+                h4{
+                    font-size: max(15px, 0.8vw);
+                    font-weight: 400;
+                }
+                p{
+                    font-weight: 300;
+                    padding:max(25px, 1vw) 0 max(30px, 1.5vw) 0; 
+                    line-height: 1.8;
+                }
+                .link{
+                    width: fit-content;
+                    padding: max(10px, 0.8vw) 0;
+                    font-size: max(12px, 0.65vw);
+                    border-radius: 10px;
+                    color:var(--main-color);
+                }
+            }
+        }
+    }
+   }
+}
+
+@media(max-width:1100px){
+    .items-community{
+        display: flex;
+        flex-wrap: wrap;
+        .item{
+            width: 45% !important;
+            margin:35px auto !important;
+        }
+    }
+}
+
+@media(max-width:654px){
+    .items-community{
+        .item{
+            width: 95% !important;
+            margin:35px auto !important;
+        }
+    }
+}

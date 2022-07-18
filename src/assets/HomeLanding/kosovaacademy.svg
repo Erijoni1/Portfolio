@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="178.745" height="24.172" viewBox="0 0 178.745 24.172">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.885" y1="-0.018" x2="-0.016" y2="0.938" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8423e5"/>
+      <stop offset="1" stop-color="#234ae5"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_12992" data-name="Group 12992" transform="translate(-554.332 -11498.028)">
+    <text id="KosovaAcademy" transform="translate(579.077 11516.114)" fill="#0f0f0f" font-size="18" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="0">KosovaAcademy</tspan></text>
+    <g id="Group_12978" data-name="Group 12978" transform="translate(554.332 11498.028)">
+      <path id="Union_1" data-name="Union 1" d="M12.034,21.505,6.237,12.5l-2.26,2.623V8.686L11.563,0h5.442L9.3,8.941l8.07,12.564ZM0,15.122V0H3.977V15.122Z" transform="translate(0.475 2.64)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="2.367" cy="2.367" r="2.367" transform="translate(0 19.438)" fill="#234ae5"/>
+      <path id="Union_2" data-name="Union 2" d="M8.779,10.473l2.048-3.852-6.473.069L0,.084,7.912,0l4.354,6.606L9.894,11.067Z" transform="translate(7.823 0)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

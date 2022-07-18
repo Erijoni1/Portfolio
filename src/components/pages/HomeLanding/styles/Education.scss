@@ -1,0 +1,142 @@
+.Education-Academy-Home{
+    overflow: hidden;
+    margin: max(5.5%, 1.5vw );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.Education-left{
+    width: 47%;
+    padding: 15px max(33px, 1.5vw);
+    h1{
+        font-size: max(19px , 1.755vw);
+        padding: max(10px, 0.5vw);
+        font-weight: 500;
+    }
+    p{
+        font-size:max(13px, 0.755vw);
+        line-height: 1.8;
+        font-weight: 400;
+        padding: 0 0 30px  max(10px, 0.5vw);
+        color:rgb(110, 110, 110);
+    }
+    a{
+        margin-left: 10px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: var(--main-color);
+        color:var(--second-color);
+        font-size: max(14px ,0.8vw)
+        
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        .icon{
+           content: url('../../../../assets/erion.png');
+        }
+        h6{
+            margin-left: 15px;
+            font-size: max(19px, 0.5vw);
+        }
+        span{
+            color:var(--main-color);
+        }
+    }
+}
+.Education-right{
+    width: 45%;
+    display: flex;
+    position: relative;
+    padding: 20px 0px;
+    
+    &:hover .border1{
+        transition: 0.6s ease-in-out;
+         left:75%;
+      }
+      &:hover .border2{
+        transition: 0.6s ease-in-out;
+        left: 2%;
+      }
+    .girl{
+        content: url('../../../../assets/HomeLanding/photo1.png');
+        width: 30%;
+        margin-left: max(20px, 0.3vw);
+    }
+    .border{
+        border:4px solid var(--main-color);
+        background-color: var(--main-color);
+        opacity: 10%;
+        border-radius: 90px;
+        height:95%;
+        width: 20%;
+        top:1%;
+        left:18%;
+        position: absolute;
+       
+    }
+    .girl2{
+        content: url('../../../../assets/HomeLanding/photo2.png');
+        width: 30%;
+        margin-left: 25%;
+        filter: brightness(50%);
+       
+    }
+    .text{
+        position: absolute;
+        top:35%;
+        width: 25%;
+        left:74.5%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        p{
+            font-size: max(12px, 0.7vw) ;
+            color:var(--second-color);
+        }
+        a{
+            color:var(--second-color);
+            font-size: max(12px, 0.7vw) ;
+            backdrop-filter: blur(10px);
+            background: hsla(0,0%,100%,.15);
+        }
+    }
+    .border2{
+        top:2%;
+        left:57%;
+        width: 34%;
+        height: 95%;
+        border-radius: 30%;
+        z-index: -1;
+        opacity: 30% !important;
+        opacity: unset;
+        
+       
+    }
+   
+}
+
+@media(max-width:940px){
+    .Education-Academy-Home{
+        flex-direction: column;
+        .Education-left{
+          width: 95%;
+          max-width: 95% !important;  
+          margin: 0 auto;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          .logo{
+            justify-content: center;
+          }
+          a{
+            margin: 0 auto;
+          }
+          
+        }
+        .Education-right{
+            width:  95%;
+            margin: 30px auto;
+        }
+    }
+}

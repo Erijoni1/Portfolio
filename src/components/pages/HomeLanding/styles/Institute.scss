@@ -1,0 +1,193 @@
+.Institute-Home{
+    overflow: hidden;
+    margin: max(2.0%, 1.5vw ) max(1.5% , 1.5vw);
+    padding-bottom: 10px;
+    position: relative;
+    text-align: center;
+    h1{
+        font-size: max(18px, 1.75vw);
+        font-weight: 500;
+    }
+    
+}
+.Institute-Home{
+    .react-tabs__tab-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: max(20px, 1.5vw) ;
+        button{
+            width: max(3.5%, 1.2vw);
+            height: max(20px, 1.0vw);
+            border-radius: 20px;
+            border: none;display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: max(12px, 1.3vw);
+            color:var(--second-color);
+            background-color: #d4d4d4;
+            &:hover{
+                cursor: pointer;
+                background-color:var(--main-color) ;
+            }
+        }
+       
+    }
+    .react-tabs__tab{
+        margin:0 1.5%;
+        position: relative;
+        z-index: 4;
+        width: fit-content;
+        padding:max(10px, 0.75vw) max(20px, 1.5vw);
+        font-size: max(15px, 0.9vw);
+        border-radius: max(10px, 0.6vw);
+        display: flex;
+        justify-content: center;
+        border:1px solid rgb(223, 221, 221);
+        h5{
+            font-weight: 400;
+        }
+        &:hover{
+            cursor: pointer;
+            background-color: var(--main-color);
+            color:var(--second-color);
+        }
+        @media(max-width:1300px){
+            margin-top: 10px;
+        }
+    }
+    .react-tabs__tab--selected{
+        outline:none;
+        background-color: var(--main-color);
+        color:var(--second-color);
+        border: none;
+    }
+   
+}
+   
+    .institute-container{
+        width: 100%;
+        position: relative;
+        padding: max(15px,0.5vw);
+        .int-container{
+            width: 95.5%;
+            border:1px solid #e9e7e7;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin: max(5px, 0.5vw);
+            padding-bottom: max(10px, 0.5vw);
+            cursor: pointer;
+            &:hover{
+                transform: translate(-5px , -5px);
+                
+            }
+            .image-container{
+                width: 100%;
+                position: relative;
+                .profile{
+                    width: 100%;
+                    filter:brightness(60%);
+                    &:hover{
+                        filter: brightness(30%);
+                    }
+                }
+                .friend_container{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    display: flex;
+                    align-items: center;
+                    padding: max(10px, 0.5vw);
+                    .icm{
+                        content: url('../../../../assets/HomeLanding/27.svg');
+                        width: 25%;
+                    }
+                    p{
+                        font-size: max(13px, 0.75vw);
+                        color:var(--second-color);
+                        padding-left: 10px;
+                    }
+                }
+                .text-cont{
+                    text-align: left;
+                    padding: max(15px, 0.75vw );
+
+                    h1{
+                        font-size: max(15px, 0.75vw);
+                    }
+                    p{
+                        font-size: max(13px ,0.75vw);
+                        color:var(--gray-color);
+                        padding: max(15px,0.75vw) 0;
+                    }
+                }
+                .locations{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: max(10px, 0.5vw);
+                    .left{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .l-icon{
+                            content: url('../../../../assets/HomeLanding/location.svg');
+                            width: 8%;
+                        }
+                        p{
+                            font-size: max(13px ,0.75vw);
+                            color:var(--gray-color);
+                            margin-left: 5px;
+                        }
+                        
+                    }p{
+                        font-size: max(13px ,0.75vw);
+                        color:var(--main-color);
+                        cursor: pointer;
+                    }
+                }
+            }
+            &:hover{
+                .text-cont{
+                    h1{
+                        color:var(--main-color);
+                    }
+                    .image-container{
+                    .profile{
+                        
+                        filter: brightness(40%);
+                    }}
+                }
+            }
+        }
+        .rec-arrow,
+        .rec-arrow-left,
+        .rec-arrow-right{
+            width: 5%;
+            height: 10%;
+            display: flex;justify-content: center;
+            align-items: center;
+            font-size: max(18px, 0.75vw);
+            color:#fff;
+            border-radius: 20px;
+            background-color: #B7B7B7;
+            &:hover{
+                background-color: #FF9C39 !important;
+            }
+        }
+        .rec-dot{
+            background-color: #FF9C39;
+            box-shadow:none;
+        }
+    }
+
+
+@media(max-width:1300px){
+    .Institute-Home{
+        button{
+            display: none;
+        }
+    }
+}

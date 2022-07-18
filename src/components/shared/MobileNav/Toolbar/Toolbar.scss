@@ -1,0 +1,60 @@
+.navbar .mobile-toolbar {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 77.5px;
+  display: flex;
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 7.5% 10px;
+  .mobile-logo-row a {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      content: url("../../../../assets/logo.png");
+    }
+
+    h6 {
+      font-size: max(20px, 1.8vw);
+      font-weight: 400;
+      color: #000000;
+      padding-left: 15px;
+      span {
+        color: #ff9c39;
+      }
+    }
+  }
+  button {
+    border: 0;
+    background-color: transparent;
+    font-size: 35px;
+    cursor: pointer;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.navbar .toolbar__sticky {
+  box-shadow: rgba(99, 99, 99, 0.15) 0px 1.5px 2.5px 0px;
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  background: #fff !important;
+  .mobile-logo-row a {
+    .mobile-logo-container {
+      content: url("../../../../assets/logo.png") !important;
+    }
+    h6 {
+      color: #111 !important;
+    }
+  }
+  button {
+    color: #111 !important;
+  }
+}

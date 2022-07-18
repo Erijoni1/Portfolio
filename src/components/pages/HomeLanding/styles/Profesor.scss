@@ -1,0 +1,62 @@
+.main-margin{
+    padding-top: max(25px, 0.8vw);
+    h1{
+        text-align: center;
+        color:#191919;
+    }
+    .rec-arrow,
+    .rec-arrow-right,.rec-arrow-left{
+        height: 9%;
+    }
+    .items{
+        position: relative;
+        border-radius: 20px;
+        width: 90%;
+        cursor: pointer;
+        transition:0.3s all ease-in;
+        &:hover{
+            transform: scale(0.9);
+        }
+        .icon{
+            width: 100%;
+        }
+        .info{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex:1 1;
+            padding: max(15px, 1.25vw) max(10px, 0.5vw);
+
+            .links{
+                display: flex;
+                align-items: center;
+                margin-top: max(15px, 0.8vw);
+                .button3{
+                    padding-left: max(35px, 0.8vw);
+                }
+            }
+            .ticks{
+                display: flex;
+                align-items: center;
+                .ticket{
+                    content: url('../../../../assets/nike.png');
+                    padding-left: max(15px, 1.25vw);
+                }
+                h6{
+                    font-size: max(15px, 0.85vw);
+                    color:#191919;
+                }
+            }
+            @media(max-width:505px){
+                .ticks,.shared-text,.links{
+                   justify-content: center;
+                   text-align: center;
+              
+            }
+            }
+        }
+    }
+    .carousel{
+        padding:max(45px, 2.5vw) 0;
+    }
+}
